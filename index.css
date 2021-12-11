@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://i.guim.co.uk/img/media/acb02b9fc3e12cb965441dc1d77eed8d19572afd/0_150_4535_2723/master/4535.jpg?width=1020&quality=85&auto=format&fit=max&s=4be54a32b05acc33afe60306b57177bb");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.survey {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 10px solid #800000;
+  padding: 10px;
+  background-color: #fff;
+  font-family: verdana;
+  color: #000;
+  margin: auto;
+  width: 100%;
+}
+
+#title {
+  text-align: center;
+  font-family: georgia;
+}
+#description {
+  text-align: center;
+  font-size: 18px;
+}
+.asterisk {
+  color: red;
+}
+.required {
+  padding-top: 10px;
+}
+#survey-form {
+  display: flex;
+  flex-direction: column;
+}
+fieldset {
+  border: 0 none;
+}
+legend {
+  font-weight: bold;
+  padding: 10px 10px 10px 0px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+#name,
+#email,
+#number {
+  padding: 10px;
+  font-family: verdana;
+  font-size: 16px;
+  width: 100%;
+}
+#name-label,
+#email-label,
+#number-label {
+  padding: 10px 10px 10px 0px;
+  font-weight: bold;
+}
+
+#dropdown {
+  padding: 10px;
+  font-family: verdana;
+  font-size: 16px;
+  width: 100%;
+}
+.household label,
+.recipes label {
+  display: block;
+  position: relative;
+  margin-top: -20px;
+  line-height: 25px;
+  margin-left: 32px;
+}
+label[for="comments"] {
+  font-weight: bold;
+  padding: 10px 0px;
+  margin: 0px 7px;
+}
+#comments {
+  resize: none;
+  padding: 20px;
+  height: 100px;
+  width: auto;
+  font-family: verdana;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px 7px;
+}
+
+#submit {
+  display: block;
+  margin: 20px auto 10px auto;
+  padding: 10px;
+  width: 60%;
+  font-family: verdana;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #e3faa5;
+  border: solid black 2px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+#submit:hover {
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+}
+@media (min-width: 800px) {
+  .survey {
+    width: 50%;
+  }
+}
+@media (max-width: 800px) and (min-width: 500px) {
+  .survey {
+    width: 75%;
+  }
+}

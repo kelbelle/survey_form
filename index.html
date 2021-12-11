@@ -1,0 +1,74 @@
+<html>
+
+<body>
+  <main>
+    <div class="survey">
+
+      <h1 id="title">Recipe Junkie sign up form</h1>
+      <p id="description">Please tell us a little more about yourself so that we can customize your recipe experience!
+      </p>
+      <form id="survey-form">
+        <fieldset class="info">
+          <legend class="required"><i>Please note that all fields with <span class="asterisk">*</span> are required.</i></legend>
+
+          <label for="name" id="name-label"><span class="asterisk">*</span>Name</label>
+          <input type="text" placeholder="John Doe" id="name" required>
+          <label for="email" id="email-label"><span class="asterisk">*</span>Email</label>
+          <input type="email" placeholder="john@example.com" id="email" required>
+          <label for="number" id="number-label">Age</label>
+          <input type="number" id="number" min="10" max="100" placeholder="Enter your age here">
+        </fieldset>
+        <fieldset>
+          <legend>Which best describes your diet type:</legend>
+          <label for="dropdown"></label>
+          <select id="dropdown">
+            <option value="omnivore">Omnivore</option>
+            <option value="vegan">Vegan</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="pescatarian">Pescatarian</option>
+            <option value="paleo">Paleo</option>
+          </select>
+        </fieldset>
+        <fieldset class="household">
+          <legend>Select the number of people in your household:</legend>
+          <input id="1-2_persons" type="radio" name="household" value="1-2_persons">
+          <label for="1-2_persons">1 to 2</label>
+          <input id="3-5_persons" type="radio" name="household" value="3-5_persons">
+          <label for="3-5_persons">3 to 5</label>
+          <input id="6-or-more_persons" type="radio" name="household" value="6-or-more_persons">
+          <label for="6-or-more_persons">6 or more</label>
+        </fieldset>
+        <fieldset class="recipes">
+          <legend>Select all of the types of recipes you are interested in:</legend>
+          <input id="breakfast" type="checkbox" name="types" value="breakfast">
+          <label for="breakfast">Breakfast</label>
+          <input id="lunch" type="checkbox" name="types" value="lunch">
+          <label for="lunch">Lunch</label>
+          <input id="dinner" type="checkbox" name="types" value="dinner">
+          <label for="dinner">Dinner</label>
+          <input id="desserts" type="checkbox" name="types" value="desserts">
+          <label for="desserts">Desserts</label>
+          <input id="quick-meals" type="checkbox" name="types" value="quick-meals">
+          <label for="quick-meals">Quick Meals</label>
+          <input id="soups" type="checkbox" name="types" value="soups">
+          <label for="soups">Soups</label>
+          <input id="casseroles" type="checkbox" name="types" value="casseroles">
+          <label for="casseroles">Casseroles</label>
+          <input id="salads" type="checkbox" name="types" value="salads">
+          <label for="salads">Salads</label>
+          <input id="sides" type="checkbox" name="types" value="sides">
+          <label for="sides">Sides</label>
+        </fieldset>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" placeholder="We value your feedback! Please enter comments and suggestions here." cols="5" rows="10"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  
+</body>
+
+</html>
